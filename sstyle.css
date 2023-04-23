@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ #wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+ }
+
+ .container{
+   
+    position: relative;
+    width:100%;
+    display:flex ;
+
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background, .foreground{
+    position: relative;
+  z-index: -2;
+  
+}
+.foreground{
+   width: 15rem; 
+   top: 12rem;
+   transform:translateZ(-20px) scale(3);
+}
+.background{
+    transform: translateZ(-40px) scale(4);
+   
+}
+h1{
+    position: absolute;
+    top: 24rem;
+    left: 12rem;
+    font-size: 7.4rem;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    color: rgb(221, 224, 224);
+
+    text-shadow: 0 0 1rem black;
+    /* color: rgb(222, 13, 93); */
+
+}
+section{
+   background-color: rgb(46, 39, 49);
+    color: rgb(247, 237, 237);
+    padding: 10rem 0;
+}
+.bg{
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.bg1{
+    background-image: url(biking.jpg);
+
+   
+
+}
+.bg2{
+    background-image: url(sjydiving.jpg);
+}
+.bg3{
+    background-image: url(paragliding1.jpg);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+   margin-left: 18rem;
+    
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 15rem;
+    margin: 5rem 0;
+   z-index: 1;
+  
+}
+.desc{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background-color: rgb(165, 113, 199);
+    border-radius:2rem;
+    padding: 0.5rem 2.5rem;
+    font-size:2.5rem;
+    font-weight: 500;
+}
+
+.quote{
+    font-weight: 200;
+    font-size: larger;
+    font-style: italic;
+}
